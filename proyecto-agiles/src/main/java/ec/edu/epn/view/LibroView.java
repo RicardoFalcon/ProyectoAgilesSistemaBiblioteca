@@ -1,14 +1,10 @@
 package ec.edu.epn.view;
-import java.util.Scanner;
-
 import ec.edu.epn.model.*;
 import ec.edu.epn.model.Libro;
 import ec.edu.epn.model.LibroImpList;
 public class LibroView {
     public static void main(String[] args) {
         ILibroDAO l = new LibroImpList();
-        String nombre, categoria;
-        int id;
 
         System.out.println("\n----------Sistema de Actualización de Préstamo De Biblioteca-----------");
         l.addLibro(new Libro(1, "MATEMÁTICA 1", "MATEMÁTICA"));
@@ -21,7 +17,7 @@ public class LibroView {
         l.addLibro(new Libro(8, "FÍSICA I", "CIENCIAS"));
         l.addLibro(new Libro(9, "BIOLOGÍA PARA NIÑOS", "CIENCIAS NATURALES"));
         l.addLibro(new Libro(10, "50 SOMBRAS DE GRAY", "NOVELA")); 
-        
+
         //Mostrar lista de libros completa despues de ser añadidos a la lista
         System.out.println("\nLISTA DE LOS LIBROS DE LA BIBLIOTECA");
         for (Libro libro : l.findAllLibro()) {
@@ -51,27 +47,8 @@ public class LibroView {
             System.out.println(libro);
         }
  
-        System.out.println("\n/**INGRESAR UN LIBRO***/");
-        
-        System.out.println("Ingresar ID: ");
-        Scanner ide = new Scanner(System.in);
-        id = ide.nextInt();
-        System.out.println("Ingresar Libro: ");
-        Scanner entrada = new Scanner(System.in);
-        nombre = entrada.nextLine();
-        System.out.println("Ingresar Categoría: ");
-        Scanner cate = new Scanner(System.in);
-        categoria = cate.nextLine();
-        
-        
-        
-        
-        l.addLibro(new Libro(id, nombre, categoria)); 
-        
-      //Mostrar lista de libros completa despues de ser añadidos a la lista
-        System.out.println("\nLISTA DE LOS LIBROS DE LA BIBLIOTECA");
-        for (Libro libro : l.findAllLibro()) {
-            System.out.println(libro);
-        }     
+
     }
 }
+
+    

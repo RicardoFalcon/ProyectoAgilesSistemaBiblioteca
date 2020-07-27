@@ -1,0 +1,5 @@
+ec\edu\epn\model\ILibroDAO.class
+ec\edu\epn\model\Libro.class
+ec\edu\epn\view\LibroView.class
+ec\edu\epn\model\LibroImpList.class
+ec\edu\epn\controller\LibroController.class

@@ -38,7 +38,7 @@ public class Libro {
 	
 	@Override
 	public String toString() {
-		return "" + this.codigo + ".-" + this.name + " Categoria: " + this.categoria;
+		return "" + this.codigo + ".--" + this.name + " Categoria: " + this.categoria;
 	}
 
 
